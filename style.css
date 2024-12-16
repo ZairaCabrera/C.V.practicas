@@ -1,0 +1,361 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #1d7c83;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header .nav-link:hover {
+    color: #e0e0e0 !important;
+}
+
+/*Ajustamos el top de cada seccion teniendo en cuenta el menu*/
+section {
+    scroll-margin-top: 100px; 
+}
+
+@media (max-width: 768px) {
+    body * section {
+        scroll-margin-top: 150px; 
+    }
+}
+
+@media (max-width: 1000px) {
+    body * section {
+        scroll-margin-top: 150px; 
+    }
+}
+
+
+/* Main ajustado a moviles y tablets */
+main {
+    padding-top: 0%;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 2%;
+    }
+}
+
+@media (max-width: 1000px) {
+    main {
+        padding-top: 2%;
+    }
+}
+
+/*BOTON de descarga de CV*/
+.download-cv-btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.download-cv-btn a {
+    font-size: 1rem;
+    color: #fff;
+    background-color:#7cd1d7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.download-cv-btn a:hover {
+    background-color:#1d7c83;
+    color: #f4f4f4;
+}
+
+@media (max-width: 768px) {
+    .download-cv-btn {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .download-cv-btn a {
+        font-size: 0.7rem;
+        color: #fff;
+        background-color:#7cd1d7;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    .download-cv-btn a:hover {
+        background-color:#1d7c83;
+        color: #f4f4f4;
+    }
+}
+
+@media (max-width: 1300px) {
+    .download-cv-btn {
+        position: absolute;
+        right: 0%;
+        top: 150%;
+        transform: translateY(-50%);
+    }
+    .download-cv-btn a {
+        font-size: 0.9rem;
+        color: #fff;
+        width: 80%;
+        background-color:#7cd1d7;
+        border: none;
+        padding: 10px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    .download-cv-btn a:hover {
+        background-color:#1d7c83;
+        color: #f4f4f4;
+    }
+}
+
+/* Logo */
+.logo img {
+    height: 150px;
+    width: auto;
+    float: left;
+    padding-left: 30px;
+    border-radius: 50%;
+}
+
+/* ajustes de secciones*/
+h1,
+h2 {
+    color: #1d7c83;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 769px) {
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    #experienciaCarousel .carousel-control-prev,
+    #experienciaCarousel .carousel-control-next,
+    #proyectosCarousel .carousel-control-prev,
+    #proyectosCarousel .carousel-control-next {
+        width: 5%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #7cd1d7;
+        border-radius: 50%;
+        padding: 10px;
+    }
+}
+
+#sobre-mi p,
+#contacto p,
+#formacion ul,
+#proyectos p {
+    text-align: justify;
+    font-size: 1rem;
+}
+
+#contacto div p {
+    text-align: center;
+}
+
+/* ajustes de carrusel */
+#experienciaCarousel .carousel-control-prev,
+#experienciaCarousel .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+    z-index: 1000;
+}
+
+#experienciaCarousel .carousel-control-prev {
+    left: 0;
+}
+
+#experienciaCarousel .carousel-control-next {
+    right: 0;
+}
+
+#experienciaCarousel .carousel-inner {
+    margin-top: 20px;
+}
+
+#experienciaCarousel .carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+#experienciaCarousel .carousel-control-prev-icon,
+#experienciaCarousel .carousel-control-next-icon {
+    background-color: #1d7c83;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#experienciaCarousel .carousel-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+#experienciaCarousel .carousel-item ul li {
+    background: none;
+    border: none;
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+/* Ajustes de carrusel para moviles*/
+@media (max-width: 768px) {
+
+    #experienciaCarousel .carousel-control-prev,
+    #experienciaCarousel .carousel-control-next {
+        opacity: 0.5;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10%;
+        z-index: 1000;
+    }
+
+    #experienciaCarousel .carousel-control-prev {
+        left: 10px;
+    }
+
+    #experienciaCarousel .carousel-control-next {
+        right: 10px;
+    }
+
+    #experienciaCarousel .carousel-control-prev-icon,
+    #experienciaCarousel .carousel-control-next-icon {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    #experienciaCarousel .carousel-control-prev:hover,
+    #experienciaCarousel .carousel-control-next:hover {
+        opacity: 1;
+    }
+}
+
+/* Canvas */
+#competenciasChart {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* botones de #proyecto */
+.github-button {
+    margin-top: 10px;
+    color: #7cd1d7;
+    background-color: white;
+    border: 2px solid #7cd1d7;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+}
+
+.github-button:hover {
+    background-color: #7cd1d7;
+    color: white;
+    border-color: #1d7c83;
+}
+
+/* Footer */
+footer {
+    background-color: #7cd1d7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Ajustes color de botones de proyecto*/
+.btn-outline-success {
+    color: #1d7c83; /* Azul oscuro */
+    border-color: #1d7c83; /* Azul oscuro */
+    background-color: transparent;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background-color: #1d7c83; /* Azul oscuro */
+    border-color: #1d7c83; /* Azul oscuro */
+}
+
+
+/* ajustes de responsive */
+@media (max-width: 768px) {
+    header .nav-link {
+        font-size: 1rem;
+    }
+
+    .logo img {
+        height: 120px;
+    }
+
+    h1,
+    h2 {
+        font-size: 2rem;
+    }
+
+    #sobre-mi p,
+    #contacto p,
+    #formacion ul,
+    #proyectos p {
+        font-size: 0.9rem;
+    }
+
+    .carousel-item ul li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header .nav-link {
+        font-size: 0.9rem;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    #sobre-mi,
+    #contacto,
+    #formacion,
+    #experiencia,
+    #proyectos {
+        padding: 15px;
+    }
+
+    .github-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}

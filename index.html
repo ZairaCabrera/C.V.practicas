@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es" id="sobre_mi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Zaira Cabrera</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+
+<body>
+
+    <!-- Header con menú fijo -->
+    <section ></section>
+    <header class="text-white text-center py-4 fixed-top">
+        <nav class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="#sobre_mi">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contacto">Datos de contacto</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#experiencia">Mi experiencia</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#competencias">Competencias profesionales</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#proyectos">Mis proyectos</a></li>
+            </ul>
+            <div class="download-cv-btn text-start">
+                <a href="https://github.com/ZairaCabrera/C.V./raw/main/CV_ZairaCabreraBarrado.pdf" class="btn btn-outline-light" download="CV_Zaira_Cabrera">
+                    Descargar CV
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección principal del contenido -->
+    <main class="container" style="margin-top: 120px;">
+        
+        <!-- Sección Sobre Mí -->
+        <section class="row my-5" id="sobre-mi">
+            <div class="col-12 d-flex align-items-start flex-wrap">
+                <img src="img/foto_cv.jpg" alt="mi foto" class="img-fluid rounded-circle me-3" style="width: 180px; float: left;">
+                <div>
+                    <h1 class="text-center">Sobre mí</h1>
+                    <p class="text-justify">Soy desarrolladora web en formación, con conocimientos en tecnologías front-end
+                        y back-end. Poseo experiencia previa en nutrición y atención al cliente, lo que me ha permitido desarrollar
+                        habilidades como la capacidad de adaptación, organización y trabajo en equipo. Mi objetivo es aplicar estas
+                        competencias en proyectos innovadores en Mercadona, contribuyendo al crecimiento de sus plataformas
+                        digitales y mejorando la experiencia de usuario.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Datos de Contacto -->
+        <section class="row my-5" id="contacto">
+            <div class="col-12 text-center">
+                <h2>Datos de contacto</h2>
+                <p><strong>Teléfono:</strong> +34 670 60 87 66</p>
+                <p><strong>Email:</strong> zairac.br@gmail.com</p>
+                <a href="https://www.linkedin.com/in/zairacabrerabarrado/" class="btn btn-outline-success">Visita mi Linkedin</a>
+            </div>
+        </section>
+
+        <!-- Sección Formación Académica -->
+        <section class="row my-5" id="formacion">
+            <div class="col-12">
+                <h2 class="text-center">Datos Académicos</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">CFGS Desarrollo de Aplicaciones Web - <strong>IES ABASTOS</strong></li>
+                    <li class="list-group-item">Graduada en Nutrición Humana - <strong>UV</strong></li>
+                    <li class="list-group-item">Master en Capacitación - <strong>UCV</strong></li>
+                    <li class="list-group-item">CFGM Técnico de Farmacia - <strong>IES Tirant Lo Blanc</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección Experiencia Profesional -->
+        <section class="row my-5" id="experiencia">
+            <div class="col-12">
+                <h2 class="text-center">Experiencia Profesional</h2>
+                <div id="experienciaCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <div class="container" style="max-width: 800px;">
+                                <strong class="titulo d-block text-center">Técnico en Farmacia y responsable del servicio de nutrición</strong><em> (2021 - Actualidad)</em>
+                                <ul class="list-group text-start">
+                                    <li class="list-group-item">Consejo farmacéutico y dispensación de medicamentos.</li>
+                                    <li class="list-group-item">Responsable del servicio de nutrición.</li>
+                                    <li class="list-group-item">Conocimientos en fitoterapia y nutracéuticos.</li>
+                                    <li class="list-group-item">Manejo de recepción, facturación, control de stocks, entre otras funciones.</li>
+                                    <li class="list-group-item">Elaboración del Sistema Personalizado de Medicación (SPD).</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container" style="max-width: 800px;">
+                                <strong class="titulo d-block text-center">Tu Salud Natural S.L.</strong><em> (2019 - 2021)</em>
+                                <ul class="list-group text-start">
+                                    <li class="list-group-item">Asesoramiento individualizado en fitoterapia.</li>
+                                    <li class="list-group-item">Asesoramiento en cosmética vegana y vegetariana.</li>
+                                    <li class="list-group-item">Recepción, colocación y control de mercancía.</li>
+                                    <li class="list-group-item">Asesoramiento dietético y nutricional.</li>
+                                    <li class="list-group-item">Gestión del establecimiento y gestión de la facturación.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container" style="max-width: 800px;">
+                                <strong class="titulo d-block text-center">Herbolario Navarro</strong><em> (2017 - 2019)</em>
+                                <ul class="list-group text-start">
+                                    <li class="list-group-item">Asesoramiento individual de fitoterapia y cosmética bio.</li>
+                                    <li class="list-group-item">Consejo dietético y asesoramiento nutricional.</li>
+                                    <li class="list-group-item">Experiencia en venta cruzada.</li>
+                                    <li class="list-group-item">Gestión de facturas.</li>
+                                    <li class="list-group-item">Manejo de recepción, control de stocks y mantenimiento.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#experienciaCarousel" data-bs-slide="prev" style="position: absolute; top: 50%; left: -5%; transform: translateY(-50%);">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#experienciaCarousel" data-bs-slide="next" style="position: absolute; top: 50%; right: -5%; transform: translateY(-50%);">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Sección Competencias Profesionales -->
+        <section class="row my-5" id="competencias">
+            <div class="col-12">
+                <h2 class="text-center">Mis Competencias</h2>
+                <canvas id="competenciasChart" class="w-100"></canvas>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section class="row my-5" id="proyectos">
+            <div class="col-12">
+                <h2 class="text-center">Proyectos</h2>
+                <div id="proyectosCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <img src="img/captura_web_arquitectura1.jpg" class="d-block mx-auto" style="max-width: 80%;" alt="Mockup del proyecto">
+                            <h3 class="mt-3 text-center">Web de arquitectura</h3>
+                            <div class="container" style="max-width: 600px;">
+                                <p class="text-center">Un diseño web moderno y elegante que refleja el profesionalismo en el sector de la arquitectura.
+                                     La página destaca por su seriedad y calidad, adaptándose a las expectativas de clientes exigentes. 
+                                     Ofrece una experiencia sólida y confiable, enfocada en transmitir trayectoria y confianza.</p>
+                            </div>
+                            <a href="https://zairacabrera.github.io/WebArquitectura/"
+                                class="btn btn-outline-success me-2">Ver web</a>
+                            <a href="https://github.com/ZairaCabrera/WebArquitectura" target="_blank"
+                                class="btn btn-outline-success">Ver proyecto en GitHub</a>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/captura_gafas_virtuales.jpg" class="d-block mx-auto" style="max-width: 80%;" alt="Mockup del proyecto">
+                            <h3 class="mt-3 text-center">Web de Presentación de Gafas 3D</h3>
+                            <div class="container" style="max-width: 600px;">
+                                <p class="text-center">Un diseño futurista y elegante, pensado para transmitir exclusividad y profesionalismo.
+                                    La interfaz destaca el producto con una estética moderna y limpia, ofreciendo una
+                                    experiencia visual impactante y de alta calidad.</p>
+                            </div>
+                            <a href="https://zairacabrera.github.io/WebPresentacionGafas3D/"
+                                class="btn btn-outline-success me-2">Ver web</a>
+                            <a href="https://github.com/ZairaCabrera/WebPresentacionGafas3D" target="_blank"
+                                class="btn btn-outline-success">Ver proyecto en GitHub</a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#proyectosCarousel"
+                        data-bs-slide="prev" style="position: absolute; top: 50%; left: -5%; transform: translateY(-50%);">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#proyectosCarousel"
+                        data-bs-slide="next" style="position: absolute; top: 50%; right: -5%; transform: translateY(-50%);">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+        © 2024 Zaira Cabrera Barrado
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Chart.js Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctx = document.getElementById('competenciasChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['Responsable', 'Organizada', 'Capacidad de adaptación', 'Compromiso'],
+                    datasets: [{
+                        label: 'Nivel de Competencia',
+                        data: [9, 8, 10, 9], 
+                        backgroundColor: 'rgba(124, 209, 215, 0.2)', 
+                    borderColor: '#1d7c83', 
+                    borderWidth: 2,
+                    pointBackgroundColor: '#1d7c83'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            suggestedMax: 10,
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
+
